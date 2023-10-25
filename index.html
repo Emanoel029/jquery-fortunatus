@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Fortunatus Motos</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container container-flex">
+        <img src="./images/logo.svg" alt="logo" />
+        <div class="menu hamburguer">
+          <span class="linha-01"></span>
+          <span class="linha-02"></span>
+          <span></span>
+          <p>Menu</p>
+        </div>
+      </div>
+      <!--nav links de navegação-->
+      <nav>
+        <div class="container">
+          <ul class="menu">
+            <li><a href="#sobre-a-loja">Sobre</a></li>
+            <li><a href="#destaque">Em destaque</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <img src="./images/slide1.png" alt="Porsche" />
+      <img src="./images/slide2.png" alt="bmw" />
+      <img src="./images/slide3.png" alt="ford" />
+      <img src="./images/slide4.png" alt="ford" />
+      <img src="./images/slide6.png" alt="ford" />
+      <img src="./images/slide7.png" alt="ford" />
+    </div>
+
+    <section id="sobre-a-loja">
+      <!--Div p imagem (GRID pq vai dividir o espao com o text)-->
+      <div class="container container-grid">
+        <img src="./images/loja.png" alt="imagem da loja" />
+        <!--div p o texto-->
+        <div>
+          <h2>Sobre a Fortunatus Motos</h2>
+          <p>
+            A Fortunatus Motors é uma empresa especializada na venda de carros
+            de luxo, que está no mercado há 15 anos. Com uma reputação sólida, a
+            empresa tem se destacado pela excelência no atendimento ao cliente e
+            pela qualidade dos seus produtos.
+          </p>
+          <br />
+          <p>
+            A empresa oferece uma ampla variedade de carros de luxo, incluindo
+            marcas de renome mundial, como BMW, Mercedes-Benz, Audi, Porsche,
+            entre outras. Os veículos são cuidadosamente selecionados para
+            garantir que atendam aos padrões de qualidade exigidos pelos
+            clientes mais exigentes.
+          </p>
+          <br />
+          <p>
+            Além da venda de carros de luxo, a Fortunatus Motors também oferece
+            serviços de manutenção e reparação, realizados por profissionais
+            altamente qualificados e com vasta experiência no mercado
+            automotivo.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section class="destaque" id="destaque">
+      <div class="container">
+        <h2>Em destaque</h2>
+        <ul class="destaque-lista lista-veiculos">
+          <li>
+            <img src="./images/carro01.png" alt="porsche" />
+            <h3>Porsche Cayenne</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <strong>R$ 629.000,00</strong>
+            </div>
+          </li>
+          <li>
+            <img src="./images/carro02.png" alt="porsche" />
+            <h3>Porsche 911 GT3 RS</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <stron>R$ 1.769.000,00</stron>
+            </div>
+          </li>
+          <li>
+            <img src="./images/carro03.png" alt="audi" />
+            <h3>Audi Q8</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <strong>R$ 666.990,00</strong>
+            </div>
+          </li>
+          <li>
+            <img src="./images/carro04.png" alt="bmw" />
+            <h3>BMW X5</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <strong>R$ 689.950,00</strong>
+            </div>
+          </li>
+          <li>
+            <img src="./images/carro05.png" alt="mercedes" />
+            <h3>Mercedes-Benz AMG GT</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div>
+              <strong>R$ 1.683.900,00</strong>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="promocoes" id="promocoes">
+      <div class="container">
+        <h2>Promoções</h2>
+        <ul class="promocoes-lista lista-veiculos">
+          <li>
+            <img src="./images/carro06.png" alt="porsche" />
+            <h3>Porsche 911 Carrera</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <del>R$ 989.000,00</del>
+              <strong>R$ 989.000,00</strong>
+            </div>
+            <button type="button">Tenho interesse</button>
+          </li>
+          <li>
+            <img src="./images/carro07.png" alt="lamborghini" />
+            <h3>Lamborghini Huracán</h3>
+            <p>Câmbio automático, 2 portas, vidros e travas eletricas.</p>
+            <div classe="price">
+              <del>R$ 5.300.000,00</del>
+              <strong>R$ 4.770.000,00</strong>
+            </div>
+            <button type="button">Tenho interesse</button>
+          </li>
+          <li>
+            <img src="./images/carro08.png" alt="audi" />
+            <h3>Audi A3 Sedan</h3>
+            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div classe="price">
+              <del>R$ 275.990,00</del>
+              <strong>R$ 248.00,00</strong>
+            </div>
+            <button type="button">Tenho interesse</button>
+          </li>
+          <li>
+            <img src="./images/carro09.png" alt="ferrari" />
+            <h3>Ferrari F8</h3>
+            <p>âmbio automático, 4 portas, vidros e travas eletricas.</p>
+            <div classe="price">
+              <del>R$ 3.500.000,00</del>
+              <strong>R$ 3.100.000,00</strong>
+            </div>
+            <button type="button">Tenho interesse</button>
+          </li>
+          <li>
+            <img src="./images/carro10.png" alt="mclaren" />
+            <h3>McLaren 720S</h3>
+            <p>Câmbio automático, 2 portas, vidros e travas eletricas.</p>
+            <div class="price">
+              <del>R$ 4.800.000,00</del>
+              <strong>R$ 4.320.000,00</strong>
+            </div>
+            <button type="button">Tenho interesse</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contatos">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <form>
+          <div class="from-campo">
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" id="name" />
+          </div>
+          <div class="from-campo">
+            <label for="fone">Telefone</label>
+            <input type="number" name="telefone" id="fone" />
+          </div>
+          <div class="from-campo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="from-campo">
+            <label for="veiculo">Veículo de interesse</label>
+            <input type="text" name="vel" id="veiculo" />
+          </div>
+          <div class="from-campo">
+            <label for="msg">Mensagem</label>
+            <textarea name="mensagem" id="msg"></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container container-flex">
+        <p>2023 &copy;Fortunatus Motos - Todos os direitos reservados</p>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./icones/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icones/facebook.svg" alt="face" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./icones/youtube.svg" alt="youtube" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
