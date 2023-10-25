@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Fortunatus Motos</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--folhas de estilos para Slick Carousel-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <header>
       <div class="header container container-flex">
         <img src="./images/logo.svg" alt="logo" />
-        <div class="menu hamburguer">
+        <div class="menu-hamburguer">
           <span class="linha-01"></span>
           <span class="linha-02"></span>
           <span></span>
@@ -30,7 +46,7 @@
         </div>
       </nav>
     </header>
-    <div>
+    <div id="carousel-imagens" class="slide">
       <img src="./images/slide1.png" alt="Porsche" />
       <img src="./images/slide2.png" alt="bmw" />
       <img src="./images/slide3.png" alt="ford" />
@@ -83,6 +99,7 @@
             <div class="price">
               <strong>R$ 629.000,00</strong>
             </div>
+            <button type="button">Tenho interesse</button>
           </li>
           <li>
             <img src="./images/carro02.png" alt="porsche" />
@@ -91,6 +108,7 @@
             <div class="price">
               <stron>R$ 1.769.000,00</stron>
             </div>
+            <button type="button">Tenho interesse</button>
           </li>
           <li>
             <img src="./images/carro03.png" alt="audi" />
@@ -99,6 +117,7 @@
             <div class="price">
               <strong>R$ 666.990,00</strong>
             </div>
+            <button type="button">Tenho interesse</button>
           </li>
           <li>
             <img src="./images/carro04.png" alt="bmw" />
@@ -107,15 +126,17 @@
             <div class="price">
               <strong>R$ 689.950,00</strong>
             </div>
+            <button type="button">Tenho interesse</button>
           </li>
           <li>
-            <img src="./images/carro05.png" alt="mercedes" />
-            <h3>Mercedes-Benz AMG GT</h3>
-            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
-            <div>
-              <strong>R$ 1.683.900,00</strong>
-            </div>
-          </li>
+            <img src="./images/carro05.png" alt="Carro da Porsche" />
+            <h3>Mercedes-Benz AMG GT</h2>
+              <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+              <div class="price">
+                  <strong>R$ 1.683.900,00</strong>
+              </div>
+              <button type="button">Tenho interesse</button>
+        </li>
         </ul>
       </div>
     </section>
@@ -135,35 +156,41 @@
             <button type="button">Tenho interesse</button>
           </li>
           <li>
-            <img src="./images/carro07.png" alt="lamborghini" />
+            <img src="./images/carro07.png" alt="Carro da Lamborghini" />
             <h3>Lamborghini Huracán</h3>
-            <p>Câmbio automático, 2 portas, vidros e travas eletricas.</p>
-            <div classe="price">
-              <del>R$ 5.300.000,00</del>
-              <strong>R$ 4.770.000,00</strong>
+            <p>
+                Câmbio automático, 4 portas, vidros e travas eletricas.
+            </p>
+            <div class="price">
+                <del>R$ 5.300.000,00</del>
+                <strong>R$ 4.770.000,00</strong>
             </div>
             <button type="button">Tenho interesse</button>
-          </li>
-          <li>
-            <img src="./images/carro08.png" alt="audi" />
+        </li>
+        <li>
+            <img src="./images/carro08.png" alt="Carro da Audi" />
             <h3>Audi A3 Sedan</h3>
-            <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
-            <div classe="price">
-              <del>R$ 275.990,00</del>
-              <strong>R$ 248.00,00</strong>
+            <p>
+                Câmbio automático, 4 portas, vidros e travas eletricas.
+            </p>
+            <div class="price">
+                <del>R$ 275.990,00</del>
+                <strong>R$ 248.00,00</strong>
             </div>
             <button type="button">Tenho interesse</button>
-          </li>
-          <li>
-            <img src="./images/carro09.png" alt="ferrari" />
-            <h3>Ferrari F8</h3>
-            <p>âmbio automático, 4 portas, vidros e travas eletricas.</p>
-            <div classe="price">
+        </li>
+        <li>
+          <img src="./images/carro09.png" alt="Carro da Ferrari" />
+          <h3>Ferrari F8</h3>
+          <p>
+              Câmbio automático, 4 portas, vidros e travas eletricas.
+          </p>
+          <div class="price">
               <del>R$ 3.500.000,00</del>
               <strong>R$ 3.100.000,00</strong>
-            </div>
-            <button type="button">Tenho interesse</button>
-          </li>
+          </div>
+          <button type="button">Tenho interesse</button>
+        </li>
           <li>
             <img src="./images/carro10.png" alt="mclaren" />
             <h3>McLaren 720S</h3>
@@ -182,23 +209,23 @@
       <div class="container">
         <h2>Entre em contato</h2>
         <form>
-          <div class="from-campo">
+          <div class="form-campo">
             <label for="name">Nome:</label>
             <input type="text" name="nome" id="name" />
           </div>
-          <div class="from-campo">
+          <div class="form-campo">
             <label for="fone">Telefone</label>
             <input type="number" name="telefone" id="fone" />
           </div>
-          <div class="from-campo">
+          <div class="form-campo">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" />
           </div>
-          <div class="from-campo">
+          <div class="form-campo">
             <label for="veiculo">Veículo de interesse</label>
             <input type="text" name="vel" id="veiculo" />
           </div>
-          <div class="from-campo">
+          <div class="form-campo">
             <label for="msg">Mensagem</label>
             <textarea name="mensagem" id="msg"></textarea>
           </div>
@@ -208,21 +235,39 @@
     </section>
     <footer>
       <div class="container container-flex">
-        <p>2023 &copy;Fortunatus Motos - Todos os direitos reservados</p>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="./icones/instagram.svg" alt="instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./icones/facebook.svg" alt="face" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./icones/youtube.svg" alt="youtube" /></a>
-          </li>
+        <p> 2023 &copy; Fortunatus Motors - Todos os direitos reservados</p>
+        <ul class="container-flex">
+            <li>
+                <a href="#">
+                    <img src="./icones/facebook.svg" alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/youtube.svg" alt="Youtube"></a>
+            </li>
         </ul>
-      </div>
+    </div>
     </footer>
+    <!--Incluir a biblioteca jQuery na página da web-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
