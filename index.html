@@ -46,6 +46,7 @@
         </div>
       </nav>
     </header>
+    <!--Para fazer o carousel de img-->
     <div id="carousel-imagens" class="slide">
       <img src="./images/slide1.png" alt="Porsche" />
       <img src="./images/slide2.png" alt="bmw" />
@@ -214,20 +215,20 @@
             <input type="text" name="nome" id="name" />
           </div>
           <div class="form-campo">
-            <label for="fone">Telefone</label>
-            <input type="number" name="telefone" id="fone" />
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
           </div>
           <div class="form-campo">
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" />
           </div>
           <div class="form-campo">
-            <label for="veiculo">Veículo de interesse</label>
-            <input type="text" name="vel" id="veiculo" />
+            <label for="veiculo-interesse">Veículo de interesse</label>
+            <input type="text" name="veiculoDeInteresse" id="veiculo-interesse" title="veiculo"/>
           </div>
           <div class="form-campo">
-            <label for="msg">Mensagem</label>
-            <textarea name="mensagem" id="msg"></textarea>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
           </div>
           <button type="submit">Enviar</button>
         </form>
@@ -235,7 +236,7 @@
     </section>
     <footer>
       <div class="container container-flex">
-        <p> 2023 &copy; Fortunatus Motors - Todos os direitos reservados</p>
+        <p> 2023 &copy; Fortunatus Motors - Site criado por Emaneol Timbó</p>
         <ul class="container-flex">
             <li>
                 <a href="#">
